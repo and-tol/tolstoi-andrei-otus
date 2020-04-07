@@ -1,6 +1,5 @@
-node_modules/
-build/
 .history
 .vscode
+node_modules/
 dist/
 *.config.js

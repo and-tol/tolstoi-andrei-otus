@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.ts',
   output: {
     path: path.join(__dirname, '/dist'),
     filename: 'index.js',
@@ -11,7 +11,7 @@ module.exports = {
   resolve: {
     extensions: ['js', 'jsx', 'ts', 'tsx', 'json'],
   },
-  devServer:{
+  devServer: {
     historyApiFallback: true,
     port: 9000,
   },
