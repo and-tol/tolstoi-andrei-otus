@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx webpack-dev-server --mode development --open --hot",
+    "start": "webpack-dev-server --mode development --open --hot",
     "build": "npx webpack --mode production",
-    "lint": "npx lint .js,.jsx,.ts,.tsx --fix src/",
+    "lint": "npx lint  .js,.jsx,.ts,.tsx --fix src/",
     "test": "npx jest --passWithNoTests"
   },
   "husky": {
