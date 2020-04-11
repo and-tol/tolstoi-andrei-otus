@@ -3,17 +3,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.ts',
-  output: {
-    path: path.join(__dirname, '/dist'),
-    filename: 'index.js',
-  },
   devtool: 'source-map',
   resolve: {
     extensions: ['js', 'jsx', 'ts', 'tsx', 'json'],
   },
-  devServer: {
-    historyApiFallback: true,
-    port: 9000,
+  output: {
+    path: path.join(__dirname, '/dist'),
+    filename: 'index.js',
   },
   module: {
     rules: [
@@ -23,6 +19,9 @@ module.exports = {
         exclude: /node_modules/,
       },
     ],
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebpackPlugin({

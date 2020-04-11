@@ -7,8 +7,14 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'prettier/@typescript-eslint',
     'plugin:prettier/recommended',
+    'plugin:react/recommended',
     'prettier',
   ],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   rules: {
     'prettier/prettier': [
       'error',
@@ -31,11 +37,11 @@ module.exports = {
     {
       files: ['webpack.config.js'],
       rules: {
-        '@typescript-eslint/no-var-requires': 'off',
+        '@typescript-eslint/no-var-requires': ['off'],
       },
     },
   ],
   plugins: ['react', 'prettier', '@typescript-eslint'],
 
   parser: '@typescript-eslint/parser',
-}
+};
