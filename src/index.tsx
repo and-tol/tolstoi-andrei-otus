@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-const Header = <h1>Header</h1>;
+import { Hello } from './Hello';
 
-render(Header, document.getElementById('root'));
+render(<Hello username="Ivan" />, document.getElementById('root'));

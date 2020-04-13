@@ -24,6 +24,8 @@ module.exports = {
     ],
     'react/jsx-max-props-per-line': [1, { maximum: 2, when: 'multiline' }],
     quotes: [2, 'single'],
+    'react/prop-types': 0,
+    '@typescript-eslint/explicit-function-return-type': 0,
   },
   parserOptions: {
     sourceType: 'module',
